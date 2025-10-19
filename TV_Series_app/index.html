@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TV Series</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        background-color: #f8f9fa;
+      }
+
+      .container {
+        margin-top: 40px;
+      }
+
+      #serie-detail {
+        display: none;
+      }
+
+      .card {
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .card img {
+        width: 100%;
+        height: auto;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .card-body {
+        padding: 1rem;
+      }
+
+      th {
+        background-color: #212529;
+        color: white;
+      }
+
+      a.serie-link {
+        text-decoration: none;
+        color: #0d6efd;
+        font-weight: 500;
+      }
+
+      a.serie-link:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h3 class="mb-4 fw-bold">TV Series</h3>
+      <div class="row">
+        <div class="col-md-8">
+          <table class="table table-striped table-bordered align-middle">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Channel</th>
+                <th>Seasons</th>
+              </tr>
+            </thead>
+            <tbody id="series-table"></tbody>
+          </table>
+          <p id="average" class="fw-semibold"></p>
+        </div>
+
+        <div class="col-md-4">
+          <div id="serie-detail" class="card">
+            <img
+              id="serie-image"
+              src=""
+              class="card-img-top"
+              alt="Series image"
+            />
+            <div class="card-body">
+              <h5 id="serie-title" class="card-title"></h5>
+              <p id="serie-description" class="card-text"></p>
+              <a
+                id="serie-url"
+                href="#"
+                target="_blank"
+                class="card-link text-primary"
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    ></script>
+
+    <script type="module" src="./dist/main.js"></script>
+  </body>
+</html>
